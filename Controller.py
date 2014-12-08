@@ -8,5 +8,3 @@ class Controller:
     self.MODEL = MODEL
     self.VIEW = VIEW
 
-  def move(self):
-      print "moving"
