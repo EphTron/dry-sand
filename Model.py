@@ -26,5 +26,5 @@ class Model:
     self.worlds.append(self.root_world)
     self.current_world = self.root_world
 
-    self.waves = Waves(self.island_pos, self.SCREEN_HEIGHT, self.trans_color)
+    self.waves = Waves(self.island_pos, self.SCREEN_WIDTH ,self.SCREEN_HEIGHT, self.trans_color)
 

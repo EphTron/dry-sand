@@ -19,7 +19,6 @@ fpsTime = pygame.time.Clock()
 while True:
     view.draw()
     for event in pygame.event.get():
-        print event
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
