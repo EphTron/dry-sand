@@ -17,7 +17,7 @@ class Model:
     #settings
     self.fps = 60
     self.move_speed = 2
-    self.island_pos = 0.66
+    self.island_pos = 0.5
     self.trans_color = pygame.Color(255,255,255)
 
     #environment

@@ -27,7 +27,5 @@ class Waves:
       _wave = Wave(i,self.img,_x, _y)
 
       self.wave_list.append(_wave)
-      print "created wave:"
-      print _x
 
 
