@@ -10,6 +10,7 @@ class World:
     self.WIDTH = WIDTH
     self.HEIGHT = HEIGHT
 
+    self.line_width = 70
     self.left_world = None
     self.right_world = None
     

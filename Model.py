@@ -17,7 +17,7 @@ class Model:
     #settings
     self.fps = 60
     self.move_speed = 2
-    self.island_pos = 0.5
+    self.island_pos = 0.75
     self.trans_color = pygame.Color(255,255,255)
 
     #environment
@@ -26,5 +26,5 @@ class Model:
     self.worlds.append(self.root_world)
     self.current_world = self.root_world
 
-    self.waves = Waves(self.island_pos, self.SCREEN_HEIGHT, self.trans_color)
+    self.waves = Waves(self.island_pos, self.SCREEN_WIDTH ,self.SCREEN_HEIGHT, self.trans_color)
 

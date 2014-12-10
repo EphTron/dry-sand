@@ -8,3 +8,5 @@ class Controller:
     self.MODEL = MODEL
     self.VIEW = VIEW
 
+  def update_motion(self):
+  	self.MODEL.waves.update()
