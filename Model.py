@@ -2,7 +2,7 @@ import pygame
 import sys
 from pygame.locals import *
 
-#from Player import *
+from Player import *
 from World import *
 from Waves import *
 
@@ -20,11 +20,14 @@ class Model:
     self.island_pos = 0.75
     self.trans_color = pygame.Color(255,255,255)
 
-    #environment
+    #init environment
     self.worlds = []
     self.root_world = World(len(self.worlds), self.SCREEN_WIDTH, self.SCREEN_HEIGHT)
     self.worlds.append(self.root_world)
     self.current_world = self.root_world
 
     self.waves = Waves(self.island_pos, self.SCREEN_WIDTH ,self.SCREEN_HEIGHT, self.trans_color)
+
+    #init player
+    self.player = Player("Jimmy", "imgs/player.png", 20, self.SCREEN_HEIGHT * self.island_pos - 140, self.trans_color)
 

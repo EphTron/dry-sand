@@ -17,6 +17,7 @@ class View:
     self.draw_world(self.MODEL.current_world)
     #self.draw_player(self.)
     self.draw_waves(self.MODEL.waves)
+    self.draw_player(self.MODEL.player)
 
 
   def draw_world(self, WORLD):
@@ -29,8 +30,6 @@ class View:
                    (_x,_y),      # end pos
                    WORLD.line_width)           # line width
 
-
-
   def draw_waves(self, WAVES):
     #print "drew wave"
     for wave in WAVES.wave_list:
@@ -39,3 +38,6 @@ class View:
       for i in range(0,wave.PARTS+1):
         self.SCREEN.blit(wave.IMG, (_x, _y))
         _x += wave.IMG.get_width()
+
+  def draw_player(self, PLAYER):
+    self.SCREEN.blit(PLAYER.img, (PLAYER.X, PLAYER.Y))

@@ -36,12 +36,13 @@ class Waves:
     for i in range(0, int(_waves_needed+1)):
       _x = - random.randint(0,self.img_width)
       _y = self.wave_space - self.img_height + (self.img_height* 0.5) * i
+      #_img = scale(self.img, (width, height), DestSurface = None)
       _wave = Wave(i, self.img, self.img_width, _parts_needed, _x, _y)
       self.wave_list.append(_wave)
 
   def update(self):
     for wave in self.wave_list:
-      _speed = 0.1 + (wave.ID * 0.05) + random.uniform(0.01,0.05)
+      _speed = 0.1 + (wave.ID * 0.08) + random.uniform(0.01,0.05)
       wave.reduce_x(_speed)
       if (wave.X + wave.IMG_WIDTH < 0):
         wave.set_x(0)
