@@ -15,14 +15,5 @@ controller = Controller(model, view)
 
 fpsTime = pygame.time.Clock()
 
-#setup main loop
-while True:
-    view.draw()
-    controller.update_motion()
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-
-    pygame.display.update()
-    fpsTime.tick(model.fps)
+while 1:
+  controller.run(fpsTime)
