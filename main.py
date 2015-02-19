@@ -9,7 +9,7 @@ from Controller import *
 # setup pygame
 pygame.init()
 
-model = Model(1800, 1000)
+model = Model(600, 400)
 view = View(model, model.screen)
 controller = Controller(model, view)
 
