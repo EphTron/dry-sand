@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled source #
 ###################
 *.pyc
@@ -5,3 +6,13 @@
 # Sublime Projects #
 ####################
 *.sublime-project
+*.sublime-workspace
+
+=======
+*.pyc
+*.sublime-project
+*.sublime-workspace
+*.pyc
+Controller.pyc
+*.pyc
+>>>>>>> 92135c2ea5080e57755b6f8d3a2a241cc280811c
