@@ -1,0 +1,9 @@
+# Compiled source #
+###################
+*.pyc
+
+# Sublime Projects #
+####################
+*.sublime-project
+*.sublime-workspace
+
