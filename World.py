@@ -2,15 +2,15 @@ import pygame
 import sys
 from pygame.locals import *
 
+import Collision
 
 class World:
-  def __init__(self, ID, WIDTH, HEIGHT):
+  def __init__(self, ID, SIZE, line_width):
     #setup player
     self.ID = ID
-    self.WIDTH = WIDTH
-    self.HEIGHT = HEIGHT
+    self.SIZE = SIZE
 
-    self.line_width = 70
+    self.line_width = line_width
     self.left_world = None
     self.right_world = None
     

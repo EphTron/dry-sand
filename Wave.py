@@ -5,16 +5,15 @@ from pygame.locals import *
 
 class Wave:
 
-  def __init__(self, ID, IMG, IMG_WIDTH, PARTS, X, Y):
+  def __init__(self, ID, IMG, IMG_WIDTH, PARTS, POSITION):
     self.ID = ID
     self.IMG = IMG
     self.IMG_WIDTH = IMG_WIDTH
     self.PARTS = PARTS
-    self.X = X
-    self.Y = Y
+    self.position = POSITION
 
   def set_x(self, X):
-    self.X = X
+    self.position.x = X
 
   def reduce_x(self, PIXEL):
-    self.X -= PIXEL
+    self.position.x -= PIXEL
